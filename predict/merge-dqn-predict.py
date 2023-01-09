@@ -36,5 +36,5 @@ TIMESTEPS = 50000
 
 
 mean_reward, std_reward = evaluate_policy(model, model.get_env(), n_eval_episodes=10)
-print(mean_reward)
-print(std_reward)
+print('Mean reward:' + mean_reward)
+print('Standard deviation of rewards: ' + std_reward)

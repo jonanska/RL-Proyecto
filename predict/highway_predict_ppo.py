@@ -26,5 +26,5 @@ env = ReacherRewardWrapper(gym.make("highway-fast-v0"),render=True)
 model = PPO.load("../models/highway-fast-v0-PPO/240000", env =env, verbose=1, tensorboard_log="../logs/highway-fast-v0_ppo")
 
 mean_reward, std_reward = evaluate_policy(model, model.get_env(), n_eval_episodes=10)
-print(mean_reward)
-print(std_reward)
+print('Mean reward:' + mean_reward)
+print('Standard deviation of rewards: ' + std_reward)
